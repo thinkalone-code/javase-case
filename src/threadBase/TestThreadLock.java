@@ -1,9 +1,9 @@
 package threadBase;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
+        import java.util.HashMap;
+        import java.util.Map;
+        import java.util.concurrent.locks.Lock;
+        import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
  * @author thinkalone-code
@@ -23,7 +23,7 @@ public class TestThreadLock {
 
     //共享锁，多个线程同时使用时，不会互斥
     String get(String key){
-       String value;
+        String value;
         readLock.lock();
         value = cache.get(key);
         try {
